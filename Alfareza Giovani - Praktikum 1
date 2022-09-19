@@ -1,0 +1,6 @@
+print("Menghitung luas ruangan")
+a = str(input("pilih salah satu satuan yang digunakan (meter/inchi) "))
+b = float(input("Berapa panjang ruangan anda? "))
+cc = float(input("Berapa lebar ruangan anda? "))
+luas = b*cc
+print(f"Maka luas ruangan anda adalah : ",(luas),(a),("persegi"))
