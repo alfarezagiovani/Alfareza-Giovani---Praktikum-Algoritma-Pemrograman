@@ -1,0 +1,50 @@
+#Awal Program
+print("Program Untuk Mencari Akar Kuadrat & Determinan")
+print("=======================================================")
+which = input("Ketik 'oke' Untuk Memulai: ")
+
+#Isi Program
+if which == 'oke':
+    import math
+
+    a = int(input("Masukkan Nilai A: "))
+    b = int(input("Masukkan Nilai B: "))
+    c = int(input("Masukkan Nilai C: "))
+
+    if (a == 0):
+        print("Bukan Merupakan Persamaan Kuadrat, Karena Nilai A: " + str(a))
+    else:
+        D = pow(b, 2)-(4*a*c)
+        if (D > 0):
+            x1 = ((-b)+math.sqrt(D))/(2*a)     
+            x2 = ((-b)-math.sqrt(D))/(2*a);
+            print("Persamaan Kuadrat " + str(a) + "x² + " + str(c))
+            print("Determinannya: " + str(D))
+            print("Memiliki Akar Berbeda")
+            print("Akar x1 = " + str(x1))
+            print("Akar x2 = " + str(x2))
+        elif (D ==0):
+            x1 = (-b)/(2*a)
+            x2 = x1
+            print("Persamaan Kuadrat " + str(a) + "x² + (" + str(b) + ")x + " + str(c))
+            print("Determinannya: " + str(D))
+            print("Merupakan Akar Kembar")
+            print("Akar = " + str(x2))
+        elif (D < 0):
+            print("Persamaan Kuadrat " + str(a) + "x² + " + str(b) + "x + " + str(c))
+            print("Merupakan Akar Imaginer")
+            print("Akar x1 = -" + str(b) + " + " + str(D) + "/2*" + str(a))
+            print("Akar x2 = -" + str(b) + " - √" + str(D) + "/2*" + str(a))
+        else:
+            print("Error, Masukan Angka Yang Valid")
+if which != 'oke':
+    print("Masukkan Perintah Yang Benar!")
+    
+#Akhir Program
+print("=======================================================")
+print("Terima Kasih Telah Menggunakan Program Ini")
+
+#Data Programmer
+print("Nama : Alfareza Giovani")
+print("NIM  : 064002200045")
+print("Prodi Teknik Informatika")
