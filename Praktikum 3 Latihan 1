@@ -1,0 +1,18 @@
+print("Menentukan Jenis Segitiga")
+print("=========================")
+
+sisiA=eval(input("Masukkan sisi A : "))
+sisiB=eval(input("Masukkan sisi B : "))
+sisiC=eval(input("Masukkan sisi C : "))
+
+x=(sisiC)**2
+y=(sisi1A)**2+(sisiB)**2
+
+if (sisiA==sisiB)and(sisiB==sisiC):
+    print("Merupakan Jenis Segitiga Sama Sisi")
+elif (sisiA==sisiB)or(sisiB==sisiC)or(sisiA==sisiC):
+    print("Merupakan Jenis Segitiga Sama Kaki")
+elif (sisiA+sisiB<=sisiC)or(sisiA+sisiC<=sisiB)or(sisiC+sisiB<=sisiA):
+    print("Merupakan Jenis Segitiga Sembarang")
+elif (sisiA+sisiB<=sisiC)or(sisiA+sisiC<=sisiB)or(sisiC+sisiB<=sisiA):
+    print("Merupakan Jenis Bukan Segitiga") 	
