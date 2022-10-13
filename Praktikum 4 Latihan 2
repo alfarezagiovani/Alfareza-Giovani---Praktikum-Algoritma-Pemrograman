@@ -1,0 +1,24 @@
+#Programmer
+"""
+Alfareza Giovani
+064002200045
+Teknik Informatika
+"""
+
+#Awal Program
+import calendar
+print("=======================================================")
+print(" ")
+print("Program Ini Berfungsi Untuk Menentukan Jumlah Hari Dalam Bulan Berdasarkan Input User")
+print(" ")
+print("=======================================================")
+
+#Mulai Program
+ulang = "Yes"
+while ulang == "Yes" or ulang != "No": 
+    year = int(input("Masukan Tahun Yang Diinginkan (Pakai Angka)→ ")) 
+    month = int(input("Masukan Bulan Yang Diinginkan (Pakai Angka)→ "))
+    print("Ada", (calendar.monthrange(year, month)[1]), "Hari Di bulan ke", month, "Tahun", year)
+    ulang = input("Ketik Yes Untuk Lanjut, Ketik No Jika Stop→ ")
+    if ulang == "No":
+        print("Terimakasih Sudah Menggunakan Program Ini")
