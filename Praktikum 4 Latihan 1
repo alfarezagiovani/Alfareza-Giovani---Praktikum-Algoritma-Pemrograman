@@ -1,0 +1,17 @@
+#Awal Program
+print("Program Untuk Menampilkan Pengulangan Pada Modul 4")
+print("=======================================================")
+which = input("Ketik 'oke' untuk memulai → ")
+
+#Isi Program
+if which == 'oke':
+    nilai = int(7)
+    for i in range(nilai,0,-1):
+        for k in range(i): 
+            print(i,end="")
+        print("")
+    print("Terimakasih Menggunakan Program Ini")
+
+
+if which != 'oke':
+    print("Masukkan Perintah Yang Benar!")
