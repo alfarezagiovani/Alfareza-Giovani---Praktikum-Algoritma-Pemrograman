@@ -1,0 +1,28 @@
+A=int(input("Angka nilai A: "))
+B=int(input("Angka nilai B: "))
+#processing
+import math as mathius
+A +=B
+a = A - B
+selisih = A-B
+A *=B
+kali = A*B
+A /=B
+bagi= A/B
+A %=B
+sisa_bagi = A%B
+log= mathius.log(A)
+A **=B
+pangkat= A**B
+B %=A
+sisa_bagi =B%A
+log= mathius.log(A)
+
+print("Jumlah: ", A)
+print("Selisih: ",selisih)
+print("Kali ",kali)
+print("Bagi ", bagi)
+print("Sisa Bagi A ke B: ",sisa_bagi)
+print("Pangkat: ",pangkat)
+print("Sisa Bagi B ke A: ",sisa_bagi)
+print("log(A): ",log)
