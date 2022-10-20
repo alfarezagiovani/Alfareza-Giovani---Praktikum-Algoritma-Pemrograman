@@ -1,0 +1,16 @@
+name = "Alfareza Giovani"
+address = " Duren Sawit, East Jakarta"
+umur = 19
+angkatan = 2022
+is_male = True
+
+if (is_male == True):
+    gender = "Laki-laki"
+else:
+    gender = "Perempuan"
+    
+print("Nama Saya ", name + ", Saya tinggal di " + address, ", Umur saya adalah " 
+      + str(umur) + " angkatan ", angkatan, "Saya adalah " + gender)
+
+code1 = input("Duren Sawit bagian mana? ")
+print(f"oalahhh di Bunga Rampai {code1}")
