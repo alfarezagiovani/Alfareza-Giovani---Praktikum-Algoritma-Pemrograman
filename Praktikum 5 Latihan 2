@@ -1,0 +1,43 @@
+#Awal Program
+print("=======================================================")
+print(" ")
+print("Program Untuk Menghitung Harga Tiket")
+print("Masukkan Umur Lalu Ketik '-1' Untuk Menghitung")
+print(" ")
+print("=======================================================")
+
+#Isi Program
+a = 0
+b = 0
+harga = 0
+while b == 0:
+    umur = int(input("Masukkan Umur: "))
+    if umur == -1:
+        break
+    elif umur < -1:
+        print("Masukkan Umur Yang Benar!")
+    elif umur <= 2 and umur >= 0:
+        print("Tiket Anda Gratis.")
+    elif umur >= 3 and umur <= 12:
+        harga += 14
+    elif umur >= 65:
+        harga += 18
+    else:
+        harga +=23
+jumlah = harga
+print(f"Harga Tiket Yang Harus Dibayar Adalah: {jumlah} Ribu Rupiah")
+while a == 0:
+    d = int(input("Silahkan Bayar: "))
+    total = d - jumlah
+    if total <= -1 :
+        print("Pembayaran Gagal.")
+    else:
+        print(f"Kembalian: {total} Ribu Rupiah")
+        break
+
+#Akhir Program
+print("=======================================================")
+print(" ")
+print("Terima Kasih Telah Menggunakan Program Saya.")
+print(" ")
+print("=======================================================")
