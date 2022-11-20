@@ -1,0 +1,20 @@
+#Awal Program
+print("=======================================================")
+print("Program Untuk Menentukan Bilangan Prima")
+print("=======================================================")
+
+#Isi Program
+def prima(a):
+    a == angka
+    b = "Merupakan Bilangan Prima"
+    if a <= 1:
+        b = "Bukan Bilangan Prima"
+    for i in range(2,a):
+        if a % i == 0:
+            b = "Bukan Bilangan Prima"
+    return f"{a} Adalah {b}"
+angka = int(input("Masukkan Angka: "))
+print(prima(angka))
+
+#Akhir Program
+print("\nTerima Kasih Telah Menggunakan Program Ini.")
