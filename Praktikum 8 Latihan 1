@@ -1,0 +1,14 @@
+def jumlah (w,x,z):
+    if w>0:
+        w=w-1
+        y= int(input(f"Masukkan angka ke-{x}: "))
+        z=z+y
+        x+=1
+        jumlah (w, x, z)
+    else:
+        print(f"Jumlah {z}")
+
+w=int(input("Banyak Angka Yang Ingin Dijumlahkan: "))
+x=1
+z=0
+jumlah(w, x, z)
