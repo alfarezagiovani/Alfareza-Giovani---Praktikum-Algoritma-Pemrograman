@@ -1,0 +1,24 @@
+#Awal Program
+print("=======================================================")
+print("Program Pemangkatan Negatif &Positif")
+print("Tekan Enter Untuk Berhenti")
+print("=======================================================")
+
+#Isi Program
+try:
+    def perpangkatan():
+        angka = input("Masukkan Angka: ")
+        if angka == "":
+            print("Program Selesai")
+            return 0
+        pangkat = input("Masukkan Perpangkatan: ")
+        hasil = int(angka) ** int(pangkat)
+        print(f"Hasil Perpangkatan: {hasil}")
+        perpangkatan()
+    perpangkatan()
+except:
+    print("Perpangkatan Harus Diisi Dan Dalam Bentuk Bilangan Bulat")
+    perpangkatan()
+
+#Akhir Program
+print("\nTerima Kasih Telah Menggunakan Program Ini.")
