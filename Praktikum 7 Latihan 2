@@ -1,0 +1,30 @@
+#Awal Program
+print("=======================================================")
+print("Program Praktikum 7 Latihan 2 - Ordinal Number")
+print("\nKetik 0 untuk menghentikan program")
+print("=======================================================")
+
+#Isi Program
+def penutup():
+    print("\nTerima Kasih Telah Menggunakan Program Ini.")
+def angka(nomor):
+    a == nomor
+    b = nomor % 10
+    if b == 1:
+        return nomor,"st"
+    elif b == 2:
+        return nomor,"nd"
+    elif b == 3:
+        return nomor,"rd"
+    elif b in range(4,21) or a == 0:
+        return nomor,"th"
+a = ""
+while True:
+    try:
+        nomor = abs(int(input("Masukkan angka: ")))
+        print(angka(nomor))
+        if nomor == 0:
+            print("Terima kasih telah menggunakan program saya")
+            break
+    except:
+        print("Error -> inputan harus dalam bentuk angka dan tidak kurang dari 0")
