@@ -1,0 +1,22 @@
+def extras():
+    namafile = input('Masukkan Nama File: ')
+    sahabat = input('Masukkan Nama Sahabatmu: ')
+    kata = input('Masukkan Catatan Tambahan Kamu: ')
+    file = open(f'{namafile}.txt','a')
+    file.write(f'\nNama Sahabat: {sahabat} \nCatatan: {kata}')
+    file.close()
+    print('\n\nData berhasil ditambahkan')
+while True:
+    print('\n==== Program File Handling ==== \n1. Membuat dan Menulis File \n2. Membaca File \n3. Menambahkan Text Pada File \n4. Keluar Dari Program')
+    pilihan = int(input('\nMasukkan pilihan berupa angka (1/2/3/4): '))
+    if pilihan == 1 :
+        file1()
+    elif pilihan == 2:
+        file2()
+    elif pilihan == 3:
+        extras()
+    elif pilihan == 4:
+        print('Program Selesai')
+        break
+    else:
+        print('Mohon Masukkan Angka Yang Sesuai.')
